@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ask.cmom"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    
+    <!-- Activities -->
+    
+        <activity android:name=".Prueba_AlertManager"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+     <!-- Services  -->	
+	
+	
+	<service android:name=".MyService">
+	
+			<intent-filter>
+                <action android:name="ask.cmom.MyService" />
+            </intent-filter>
+	
+	</service>
+	
+    </application>
+</manifest>
